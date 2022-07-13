@@ -12,5 +12,5 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: master/
-          config_file: path/this_file
+          
           
