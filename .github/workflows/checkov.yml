@@ -1,21 +1,16 @@
-name: Checkov
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
-  build:
-
+  checkov-job:
     runs-on: ubuntu-latest
+    name: checkov-action
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.8
-      - name: Test with Checkov
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Run Checkov action
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: terrfom_demo/
-          framework: terraform
+          directory: master/
+          config_file: path/this_file
+          
