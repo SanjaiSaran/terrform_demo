@@ -11,5 +11,5 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: main
+          directory: ./
           
