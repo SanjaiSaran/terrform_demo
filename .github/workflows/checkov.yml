@@ -11,6 +11,5 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: master/
-          
+          directory: SanjaiSaran/terrform_demo
           
