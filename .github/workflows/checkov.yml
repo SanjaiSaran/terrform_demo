@@ -12,4 +12,7 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           directory: ./
+          quiet: true
+          soft_fail: true
+          framework: terraform
           
