@@ -1,9 +1,7 @@
 resource "aws_instance" "good_example" {
   ami = "ami-7f89a64f"
   instance_type = "t1.micro"
-  metadata_options {
-     http_tokens = "required"
-     }  
+ 
  }
 
   root_block_device {
