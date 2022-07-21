@@ -16,6 +16,11 @@ provider "aws" {
 resource "aws_instance" "good_example" {
   ami = "ami-7f89a64f"
   instance_type = "t1.micro"
+  monitoring = true
+  metadata_options {
+     http_tokens = "required"
+     }  
+  ebs_optimized = true
 
   root_block_device {
       encrypted = true
