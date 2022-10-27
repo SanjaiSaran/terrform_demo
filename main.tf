@@ -3,7 +3,7 @@
    size              = 40
 
    tags = {
-     Name = "HelloWorld"
+     Name = "HelloWorld
    }
    encrypted = false
- }
+ 
