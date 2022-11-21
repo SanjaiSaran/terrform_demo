@@ -26,6 +26,7 @@ jobs:
       name: Setup TFLint
       with:
         tflint_version: v0.38.1
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Show version
       run: tflint --version
